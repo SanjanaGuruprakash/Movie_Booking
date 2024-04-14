@@ -1,9 +1,6 @@
 package movie_booking.movie_booking.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -22,5 +19,7 @@ public class Booking extends BaseModel{
     private int amount;
     @OneToMany
     private List<Payment> payments;
+    @ManyToOne
+    private User user;
 
 }

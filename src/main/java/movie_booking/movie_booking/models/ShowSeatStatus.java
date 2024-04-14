@@ -1,8 +1,9 @@
 package movie_booking.movie_booking.models;
 
-public enum SeatStatus {
+public enum ShowSeatStatus {
     BOOKED,
-    EMPTY
+    LOCKED,
+    AVAILABLE
 
 
 }
