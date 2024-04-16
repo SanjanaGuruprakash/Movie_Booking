@@ -14,7 +14,8 @@ public class User extends BaseModel{
 
     private String name;
     private int phoneNumber;
-    private String emial;
+    private String email;
+    private String password;
     @OneToMany
     private List<Booking> bookings;
 }
